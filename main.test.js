@@ -1,8 +1,8 @@
 const ship = require('./main');
-const ship1 = new Ship(5);
+const ship1 = new ship(5);
 
 test('gets the length of the ship', () => {
-  expect(ship(3).length).toBe(3);
+  expect(new ship(3).length).toBe(3);
 });
 
 // Gets the length of ship1 BEFORE a hit()
