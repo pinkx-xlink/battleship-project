@@ -5,4 +5,7 @@ class Gameboard {
         this.x = x;
         this.y = y;
     }
+    logBoard() {
+        return this.x, this.y;
+    }
 }
