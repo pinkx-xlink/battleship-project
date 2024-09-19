@@ -1,4 +1,4 @@
-const ship = require('./main')
+const ship = require('./main');
 class Gameboard {
     // takes in the x and y axis (number of squares up and down)
     constructor(x, y) {
@@ -13,6 +13,10 @@ class Gameboard {
             //   let cellColumnCoord = y;
             //   cell.textContent = cellColumnCoord;
             }
+        }
+        const coordinate = (x, y) => {
+            const xPosition = x;
+            const yPosition = y;
         }
     }
 
