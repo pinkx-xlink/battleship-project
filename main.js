@@ -7,7 +7,12 @@ class Ship {
       this.hits++;
     };
     isSunk() {
-      this.isSunk = true;
+      if (this.length <= this.hits) {
+        this.isSunk = true;
+      } else {
+        this.isSunk = false;
+      }
+      
     };
 }
 
