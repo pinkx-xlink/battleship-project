@@ -1,14 +1,15 @@
-function ship(length) {
-  return {
-    length: length,
-    hits: hits,
-    hit() {
-      return (this.hits += 1);
+class Ship {
+    constructor(length) {
+        this.length = length;
+        this.hits = hits;
+    }
+    
+    hit: function () {
+      this.hits += 1;
     },
-    isSunk() {
-      return (this.isSunk = true);
-    },
-  };
+    isSunk: function () {
+      this.isSunk = true;
+    };
 }
 
 module.exports = ship;
