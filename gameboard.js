@@ -25,6 +25,12 @@ class Gameboard {
         return this.x, this.y;
     }
     // be able to place a ship by calling the Ship class...
+
+    receiveAttack(coordinate) {
+        // takes a pair of coords 
+        // determines if a ship is hit or missed
+        return coordinate;
+    }
 }
 
 module.exports = Gameboard;
