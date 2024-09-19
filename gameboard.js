@@ -9,8 +9,7 @@ class Gameboard {
     logBoard() {
         return this.x, this.y;
     }
-    placeShip() {
-    }
+    // be able to place a ship by calling the Ship class...
 }
 
 module.exports = Gameboard;
