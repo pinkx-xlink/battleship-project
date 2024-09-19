@@ -5,8 +5,14 @@ class Gameboard {
         this.x = x;
         this.y = y;
     }
+
     logBoard() {
         return this.x, this.y;
+    }
+    placeShip(a, b) {
+        this.a = a;
+        this.b = b;
+        return a, b;
     }
 }
 
