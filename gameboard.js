@@ -22,7 +22,7 @@ class Gameboard {
     // be able to place a ship by calling the Ship class...
     placeShip(coordinate) {
         this.coordinate = new ship(1);
-        coordinate.hasShip = true;
+        // this.coordinate.hasShip = true;
     }
 
     receiveAttack(coordinate) {
