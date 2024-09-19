@@ -1,4 +1,5 @@
 const ship = require('./main');
+const gameboard = require('./main');
 const ship1 = new ship(5);
 
 test('gets the length of the ship', () => {
@@ -21,4 +22,8 @@ test('ship2 is sunk', () => {
     ship2.hit();
     ship2.hit();
     expect(ship2.isSunk()).toBe(true);
+  });
+
+  test('gameboard measures 10 x 10', () => {
+    expect(gameboard(10, 10)).toBe(10, 10)
   });
