@@ -1,5 +1,5 @@
-const sum = require('./main');
+const ship = require('./main');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+test('gets the length of the ship', () => {
+  expect(ship(4)).toBe(4);
 });

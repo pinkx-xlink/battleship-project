@@ -1,4 +1,4 @@
-function sum(a, b) {
-    return a + b;
-  }
-  module.exports = sum;
+function ship(length) {
+  return length;
+}
+module.exports = ship;
