@@ -9,4 +9,6 @@ function ship(length) {
     },
   };
 }
+
 module.exports = ship;
+
