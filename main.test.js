@@ -11,9 +11,5 @@ test('get length of ship1', () => {
 });
 // ship1 takes a hit()
 test('ship1 takes a hit', () => {
-  expect(ship1.hit()).toBe(4);
-});
-// gets length of ship1 after a hit()
-test('get length of ship1', () => {
-  expect(ship1.length).toBe(4);
+  expect(ship1.hit().hits).toBe(1);
 });
