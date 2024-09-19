@@ -19,11 +19,6 @@ class Gameboard {
             const yPosition = y;
         }
     }
-
-
-    logBoard() {
-        return this.x, this.y;
-    }
     // be able to place a ship by calling the Ship class...
 
     receiveAttack(coordinate) {
