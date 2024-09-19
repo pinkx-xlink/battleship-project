@@ -9,3 +9,5 @@ class Gameboard {
         return this.x, this.y;
     }
 }
+
+module.exports = Gameboard;
