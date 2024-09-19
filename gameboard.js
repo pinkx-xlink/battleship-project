@@ -9,10 +9,7 @@ class Gameboard {
     logBoard() {
         return this.x, this.y;
     }
-    placeShip(a, b) {
-        this.a = a;
-        this.b = b;
-        return a, b;
+    placeShip() {
     }
 }
 
