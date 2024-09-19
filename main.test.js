@@ -1,5 +1,5 @@
 const ship = require('./main');
-const ship1 = ship(5);
+const ship1 = new Ship(5);
 
 test('gets the length of the ship', () => {
   expect(ship(3).length).toBe(3);
@@ -10,6 +10,8 @@ test('get length of ship1', () => {
   expect(ship1.length).toBe(5);
 });
 // ship1 takes a hit()
+
 test('ship1 takes a hit', () => {
-  expect(ship1.hit().hits).toBe(1);
+  ship1.hit();
+  expect(ship1.hits).toBe(1);
 });
