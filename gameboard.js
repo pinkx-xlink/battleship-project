@@ -20,11 +20,9 @@ class Gameboard {
         }
     }
     // be able to place a ship by calling the Ship class...
-    placeShip(coordinate, hasShip) {
+    // placeShip(coordinate, hasShip) {
         // this.coordinate = new ship(1);
-        // this.coordinate.hasShip = true;
-        this.coordinate = new ship(1);
-        this.hasShip = true;
+        // this.hasShip = true;
     }
 
     receiveAttack(coordinate) {
