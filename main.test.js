@@ -2,7 +2,7 @@ const ship = require('./main');
 const ship1 = new ship(5);
 
 test('gets the length of the ship', () => {
-  expect(new ship(3).length).toBe(3);
+  expect(new ship('example', 3).length).toBe(3);
 });
 
 // Gets the length of ship1

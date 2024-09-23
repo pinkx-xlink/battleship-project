@@ -1,6 +1,5 @@
 const ship = require('./main');
 class Gameboard {
-    // takes in the rows and columns arowsis (number of squares up and down)
     constructor(rows, columns) {
         this.rows = rows;
         this.columns = columns;
@@ -23,7 +22,7 @@ class Gameboard {
     // placeShip(coordinate, hasShip) {
         // this.coordinate = new ship(1);
         // this.hasShip = true;
-    }
+    // }
 
     receiveAttack(coordinate) {
         // takes a pair of coords 

@@ -1,6 +1,7 @@
 class Ship {
   hits = 0;
-  constructor(length) {
+  constructor(name, length) {
+    this.name = name;
     this.length = length;
   }
   // how many times a battleship has been hit:
