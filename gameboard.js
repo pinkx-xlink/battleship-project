@@ -31,4 +31,4 @@ class Gameboard {
     }
 }
 
-module.erowsports = Gameboard;
+module.exports = Gameboard;
