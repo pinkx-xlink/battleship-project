@@ -1,8 +1,9 @@
-const ship = require('./main');
-const ship1 = new ship(5);
+const Ship = require('./main');
+const ships = require('./main');
+const ship1 = new Ship('carrier', 5);
 
 test('gets the length of the ship', () => {
-  expect(new ship('example', 3).length).toBe(3);
+  expect(new Ship('example', 3).length).toBe(3);
 });
 
 // Gets the length of ship1
@@ -22,3 +23,7 @@ test('ship2 is sunk', () => {
     ship2.hit();
     expect(ship2.isSunk()).toBe(true);
   });
+
+  test('log all the different types of ships', () => {
+    expect(ships).toBe([destroyer, submarine, cruiser, battleship, carrier]);
+  })

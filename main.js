@@ -27,5 +27,6 @@ const carrier = new Ship('carrier', 5);
 const ships = [destroyer, submarine, cruiser, battleship, carrier];
 
 
-module.exports = Ship;
+module.exports.Ship = Ship;
+module.exports.ships = ships;
 
