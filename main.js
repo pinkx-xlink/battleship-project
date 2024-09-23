@@ -18,6 +18,14 @@ class Ship {
   };
 }
 
+const destroyer = new Ship('destroyer', 1);
+const submarine = new Ship('submarine', 2);
+const cruiser = new Ship('cruiser', 3);
+const battleship = new Ship('battleship', 3);
+const carrier = new Ship('carrier', 5);
+
+const ships = [destroyer, submarine, cruiser, battleship, carrier];
+
 
 module.exports = Ship;
 
