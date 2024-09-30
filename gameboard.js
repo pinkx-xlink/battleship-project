@@ -3,11 +3,11 @@ class Gameboard {
     constructor(rows, columns) {
         this.rows = rows;
         this.columns = columns;
-        for(let i = 0; i < rows; i++) {
+        for(let x = 0; x < rows; x++) {
             // const tr = document.createElement('tr');
             // let cellRowCoord = Math.abs(rows - 7);
             // tr.terowstContent = cellRowCoord;
-            for (let j = 0; j < columns; j++) {
+            for (let y = 0; y < columns; y++) {
             //   const cell = document.createElement('td');
             //   let cellColumnCoord = columns;
             //   cell.terowstContent = cellColumnCoord;
