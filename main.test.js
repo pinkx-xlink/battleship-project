@@ -3,8 +3,9 @@ const ships = require('./main');
 
 
 //let ship1 = new Ship('carrier', 5);
-test('make a enw ship', () => {
-  expect(new Ship('destroyer', 1).toBe('destroyer', 1));
+test('make a new ship', () => {
+  const newShip = new Ship('destroyer', 1);
+  expect(newShip.name).toBe('destroyer');
 })
 
 
