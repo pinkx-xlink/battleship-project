@@ -6,13 +6,9 @@ const ships = require('./main');
 test('make a new ship', () => {
   const newShip = new Ship('destroyer', 1);
   expect(newShip.name).toBe('destroyer');
-})
-
-
-// Gets the length of ship1
-test('get length of ship1', () => {
-  expect(destroyer.length).toBe(1);
+  expect(newShip.length).toBe(1);
 });
+
 // ship1 takes a hit()
 // test('ship1 takes a hit', () => {
 //   ship1.hit();
