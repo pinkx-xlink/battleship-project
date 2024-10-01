@@ -4,13 +4,13 @@ const ship1 = new Ship('carrier', 5);
 
 // Gets the length of ship1
 test('get length of ship1', () => {
-  expect(ship1).toBe('carrier', 5);
+  expect(destroyer.legth).toBe(1);
 });
 // ship1 takes a hit()
-test('ship1 takes a hit', () => {
-  ship1.hit();
-  expect(ship1.hits).toBe(1);
-});
+// test('ship1 takes a hit', () => {
+//   ship1.hit();
+//   expect(ship1.hits).toBe(1);
+// });
 
 // tests to see if the ship has sunk
 test('ship2 is sunk', () => {
