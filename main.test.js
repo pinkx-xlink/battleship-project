@@ -1,10 +1,16 @@
 const Ship = require('./main');
 const ships = require('./main');
-const ship1 = new Ship('carrier', 5);
+
+
+//let ship1 = new Ship('carrier', 5);
+test('make a enw ship', () => {
+  expect(new Ship('destroyer', 1).toBe('destroyer', 1));
+})
+
 
 // Gets the length of ship1
 test('get length of ship1', () => {
-  expect(destroyer.legth).toBe(1);
+  expect(destroyer.length).toBe(1);
 });
 // ship1 takes a hit()
 // test('ship1 takes a hit', () => {
