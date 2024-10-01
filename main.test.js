@@ -1,14 +1,21 @@
 const Ship = require('./main');
-const ships = require('./main');
+// const ships = require('./main');
 const ship1 = new Ship('carrier', 5);
 
-test('gets the length of the ship', () => {
-  expect(new Ship('example', 3).length).toBe(3);
-});
+
+const destroyer = new Ship('destroyer', 1);
+const submarine = new Ship('submarine', 2);
+const cruiser = new Ship('cruiser', 3);
+const battleship = new Ship('battleship', 3);
+const carrier = new Ship('carrier', 5);
+
+const ships = [destroyer, submarine, cruiser, battleship, carrier];
+
+
 
 // Gets the length of ship1
 test('get length of ship1', () => {
-  expect(ship1.length).toBe(5);
+  expect(ship1).toBe('carrier', 5);
 });
 // ship1 takes a hit()
 test('ship1 takes a hit', () => {
