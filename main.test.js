@@ -1,17 +1,6 @@
 const Ship = require('./main');
-// const ships = require('./main');
+const ships = require('./main');
 const ship1 = new Ship('carrier', 5);
-
-
-const destroyer = new Ship('destroyer', 1);
-const submarine = new Ship('submarine', 2);
-const cruiser = new Ship('cruiser', 3);
-const battleship = new Ship('battleship', 3);
-const carrier = new Ship('carrier', 5);
-
-const ships = [destroyer, submarine, cruiser, battleship, carrier];
-
-
 
 // Gets the length of ship1
 test('get length of ship1', () => {
@@ -25,7 +14,7 @@ test('ship1 takes a hit', () => {
 
 // tests to see if the ship has sunk
 test('ship2 is sunk', () => {
-    const ship2 = new ship(2);
+    const ship2 = new Ship('baby', 2);
     ship2.hit();
     ship2.hit();
     expect(ship2.isSunk()).toBe(true);

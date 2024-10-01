@@ -1,4 +1,4 @@
-class Ship {
+export class Ship {
   hits = 0;
   constructor(name, length) {
     this.name = name;
@@ -24,9 +24,8 @@ const cruiser = new Ship('cruiser', 3);
 const battleship = new Ship('battleship', 3);
 const carrier = new Ship('carrier', 5);
 
-const ships = [destroyer, submarine, cruiser, battleship, carrier];
+export const ships = [destroyer, submarine, cruiser, battleship, carrier];
 
-
-module.exports.Ship = Ship;
-module.exports.ships = ships;
+// module.exports.Ship = Ship;
+// module.exports.ships = ships;
 
