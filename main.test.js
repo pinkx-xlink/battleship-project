@@ -1,25 +1,24 @@
-const { test, expect } = require('@jest/globals');
-
-const Ship = require('./main');
+import { test, jest, expect } from '@jest/globals';
+const { experiments } = require('webpack');
+// import { Ship } from './main';
+const ship = require('./main');
 // const ships = require('./main');
 jest.mock('./main');
 
+jest.mock('./Ship', jest.fn())
 // const fishingBoat = new Ship('fishing-boat', '2');
 // console.log(fishingBoat)
+// ship1 takes a hit(
+const ship1 = new ship('ship1', 2);
+test('ship1 takes a hit', () => {
+  ship1.hit();
+  expect(ship1.hits).toBe('1');
+});
 
-//let ship1 = new Ship('carrier', 5);
 test('make a new ship', () => {
   const newShip = new Ship('destroyer', 1);
   expect(Ship).toHaveBeenCalledTimes(1)
-  // expect(newShip.name).toBe('destroyer');
-  // expect(newShip.length).toBe(1);
 });
-
-// ship1 takes a hit()
-// test('ship1 takes a hit', () => {
-//   ship1.hit();
-//   expect(ship1.hits).toBe(1);
-// });
 
 // tests to see if the ship has sunk
 test('ship2 is sunk', () => {
@@ -29,12 +28,14 @@ test('ship2 is sunk', () => {
   expect(ship2.isSunk()).toBe(true);
 });
 
-
 test('should log carrier info', () => {
   const carrier = new Ship('carrier', 5);
   expect(console.log(carrier).toBe('carrier', 5))
-})
+});
 
-// test('log all the different types of ships', () => {
-//   expect(console.log(ships)).toBe(["destroyer, submarine, cruiser, battleship, carrier"]);
-// })
+
+test('add 1 + 2 = 3', () => {
+  const data = { one: 1}
+  data['two'] = 2;
+  expect(data).toEqual({one: 1, two 2});
+});

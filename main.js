@@ -1,20 +1,23 @@
 // module.exports = {};
 class Ship {
-  hits = 0;
-  constructor(name, length) {
+  constructor(name, length, hits = 0) {
     this.name = name;
     this.length = length;
+    this.hits = hits;
   }
+  
   // how many times a battleship has been hit:
-  hit() {
-    this.hits++;
-  };
+  hit (hits) {
+    this.hits += 1;
+    return this.hits;
+  }
+
   // determines whether a battleship has been sunk:
-  isSunk() {
+  isSunk () {
     if (this.length === this.hits) {
-      return this.isSunk = true;
+      this.isSunk = true;
     } else {
-      return this.isSunk = false;
+      this.isSunk = false;
     }
   };
 }
