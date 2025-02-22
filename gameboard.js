@@ -29,7 +29,8 @@ class Gameboard {
             this.coordinate.hasShip = true;
         }
     }
-    placeShip(){
+    placeShip(coordinate) {
+        this.coordinate = {x: 0, y: 0}
         this.hasAShip = true;
     }
 
