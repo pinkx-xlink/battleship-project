@@ -19,10 +19,19 @@ class Gameboard {
         }
     }
     // be able to place a ship bcolumns calling the Ship class...
-    // placeShip(coordinate, hasShip) {
-        // this.coordinate = new ship(1);
-        // this.hasShip = true;
-    // }
+    placeAShip(ship, coordinate, hasShip) {
+        this.ship = ship;
+        this.coordinate = coordinate;
+        this.hasShip = hasShip;
+        if (this.coordinate.hasShip) {
+            return
+        } else {
+            this.coordinate.hasShip = true;
+        }
+    }
+    placeShip(){
+        this.hasAShip = true;
+    }
 
     receiveAttack(coordinate) {
         // takes a pair of coords 

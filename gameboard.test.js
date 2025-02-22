@@ -3,12 +3,17 @@ const { experiments } = require('webpack');
 const gameboard = require('./gameboard');
 const myBoard = new gameboard(10, 10);
 
+const anotherBoard = new gameboard(5, 5);
 test('place a ship', () => {
+  //   placeShip(ship, coordinate, hasShip)
   // const littleBoat = myBoard.placeShip((6, 6), true);
   // expect(myBoard.coordinate(6,6).hasShip).toBe(true)
-  
-  // expect(myBoard.hasShip).toBe(true)
-  // expect(myBoard.coordinate(6, 6).hasShip.toBe(true));
+  myBoard.placeShip();
+  expect(myBoard.hasAShip).toBeTruthy();
+})
+
+test('empty board has no ships', () => {
+  expect(anotherBoard.hasAShip).toBeFalsy();
 })
 
 test('receive an attack', () => {
