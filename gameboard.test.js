@@ -20,8 +20,11 @@ test('receive an attack', () => {
   expect(myBoard.receiveAttack(5, 2)).toBe(5, 2)
 })
 
-// anotherBoard.placeAShip((2, 3))
-test('set coordinate', () => {
-  expect(anotherBoard.placeAShip((2, 3)).coordinates).toBe((2, 3));
+test('set coordinates', () => {
+  expect(myBoard.coordinate(1, 2).toBe((1, 2)))
 })
 
+// anotherBoard.placeAShip((2, 3))
+test('set coordinate', () => {
+  expect(anotherBoard.coordinate.hasAShip).toBeFalsy();
+})

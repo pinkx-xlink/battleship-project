@@ -16,22 +16,23 @@ class Gameboard {
         const coordinate = (rows, columns) => {
             const rowsPosition = rows;
             const columnsPosition = columns;
+            this.hasAShip = false;
         }
     }
     // be able to place a ship bcolumns calling the Ship class...
-    placeAShip(ship, coordinate, hasShip) {
-        this.ship = ship;
-        this.coordinate = coordinate;
-        this.hasShip = hasShip;
-        if (this.coordinate.hasShip) {
-            return
-        } else {
-            this.coordinate.hasShip = true;
-        }
-    }
+    // placeAShip(ship, coordinate, hasShip) {
+    //     this.ship = ship;
+    //     this.coordinate = coordinate;
+    //     this.hasShip = hasShip;
+    //     if (this.coordinate.hasShip) {
+    //         return
+    //     } else {
+    //         this.coordinate.hasShip = true;
+    //     }
+    // }
     placeShip(coordinate) {
-        this.coordinate = {x: 0, y: 0}
-        this.hasAShip = true;
+        this.coordinate = coordinate;
+        this.coordinate.hasAShip = true;
     }
 
     receiveAttack(coordinate) {
