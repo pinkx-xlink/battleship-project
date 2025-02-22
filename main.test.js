@@ -1,19 +1,12 @@
 import { test, jest, expect } from '@jest/globals';
 const { experiments } = require('webpack');
-// import { Ship } from './main';
 const ship = require('./main');
-// const ships = require('./main');
 jest.mock('./main');
-// jest.mock('./Ship');
 
 // for test 1
 const ship1 = new ship('ship1', 2);
 // for test 3
 const ship2 = new ship('baby', 2);
-
-// const fishingBoat = new Ship('fishing-boat', '2');
-// console.log(fishingBoat)
-// ship1 takes a hit(
 
 // test 1
 // expect(ship1).toBe('carrier');
@@ -21,13 +14,12 @@ const ship2 = new ship('baby', 2);
 // Received: {"hit": [Function hit], "isSunk": [Function isSunk]} 
 
 // test 3
-// tests to see if the ship has sunk
 test('ship2 is not sunk after a hit', () => {
   ship2.hit();
   expect(ship2.isSunk()).toBeFalsy();
 });
 
-test('ship2 is sunk after', () => {
+test('ship2 is sunk after 3 hits', () => {
   ship1.hit();
   ship1.hit();
   ship1.hit();
