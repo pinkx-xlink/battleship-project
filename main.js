@@ -7,13 +7,13 @@ class Ship {
   }
   
   // how many times a battleship has been hit:
-  hit (hits) {
+  hit(hits) {
     this.hits += 1;
-    return this.hits;
+    return this.hits.toString();
   }
 
   // determines whether a battleship has been sunk:
-  isSunk () {
+  isSunk(length, hits) {
     if (this.length === this.hits) {
       this.isSunk = true;
     } else {
