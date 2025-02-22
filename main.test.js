@@ -1,8 +1,11 @@
+const { test, expect } = require('@jest/globals');
+
 const Ship = require('./main');
-const ships = require('./main');
+// const ships = require('./main');
 jest.mock('./main');
 
-const { describe, it, expect } = require('@jest/globals');
+// const fishingBoat = new Ship('fishing-boat', '2');
+// console.log(fishingBoat)
 
 //let ship1 = new Ship('carrier', 5);
 test('make a new ship', () => {
@@ -26,7 +29,9 @@ test('ship2 is sunk', () => {
   expect(ship2.isSunk()).toBe(true);
 });
 
+
 test('should log carrier info', () => {
+  const carrier = new Ship('carrier', 5);
   expect(console.log(carrier).toBe('carrier', 5))
 })
 

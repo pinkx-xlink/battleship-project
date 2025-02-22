@@ -1,4 +1,4 @@
-module.exports = {};
+// module.exports = {};
 class Ship {
   hits = 0;
   constructor(name, length) {
@@ -27,6 +27,6 @@ const carrier = new Ship('carrier', 5);
 
 const ships = [destroyer, submarine, cruiser, battleship, carrier];
 
-module.exports.Ship = Ship;
-module.exports.ships = ships;
+module.exports = Ship;
+// module.exports.ships = ships;
 

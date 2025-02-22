@@ -1,3 +1,4 @@
+const { test, expect } = require('@jest/globals');
 const { experiments } = require('webpack');
 const gameboard = require('./gameboard');
 const myBoard = new gameboard(10, 10);
